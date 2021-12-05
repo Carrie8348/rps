@@ -43,13 +43,14 @@
  /**
   * compare results
   */
-
- function compareResults (result) {
-     if (computerChoice === choices[0]){
-         if (playerChoice === choices[0]);
-         alert("It's a tie, try again!")
-     } else if (playerChoice === choices[1]){
-         alert("You win, computer loses");
-     } else if (playerChoice === choices[2]{
-         alert("You lose, computer wins!")
-     }
+function compareResults(checkWinner) {
+      if (computerChoice === playerChoice){
+          alert("It's a tie!");
+      } else if (playerChoice === choices[0] && computerChoice === choices[1]){
+          alert("You win!Computer lost.");
+      } else if (playerChoice === choices[1]) && computerChoice === choices[2]{
+          alert("You lost! Computer wins.");
+      } else if (playeChoice === choices[2] && computerChoice === choices[0]){
+            alert("You lost! compute lost.");
+      }
+}
