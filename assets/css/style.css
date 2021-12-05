@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Oswald:wght@300&family=PT+Sans&display=swap');
+
+Body {
+    font-family: Oswald, sans-serif;
+    font-weight: 300;
+    color: #000000;
+    background-color: #fcf2f0;
+}
+
+/* header */
+header {
+    text-align: center;
+}
+
+
+/* game area*/
+.game-area {
+    width: 100%;
+    height: 1200px;
+}
+
+.game-area p {
+    text-align: center;
+}
+
+#buttons-area {
+   text-align: center;
+}
+
+#container {
+    width: 100%;
+}
+
+#player-image, #computer-image {
+    width: 90%;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.player {
+    width: 30%;
+    float: left;
+    margin-left: 250px;
+}
+
+.computer{
+    width: 30%;
+    float: left;
+    margin-right: 20px;
+    margin-left: 100px;
+}
+
+.scores {
+    text-align: left;
+}
+
+/* footer */
+footer {
+    clear: both;
+    height: 100px;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 0px;
+}
+
+footer h2 {
+    font-size: 20px;
+}
+
+
+/* for middle screen sizes 768px and down */
+@media screen and {max-width: 768px {
+    .game-area {
+        width: 50%;
+        height: 50%;
+    }
+
+    #buttons-area {
+        text-align: left;
+    }
+
+    #container {
+        width: 50%;
+    }
+
+   .player {
+      clear: both;
+   }
+
+   .computer {
+      clear: both;
+   }
+
+    footer {
+        height: 50%;
+    }
+
+    footer h2 {
+        font-size: 10px;;
+    } 
+}
