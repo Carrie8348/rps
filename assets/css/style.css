@@ -70,7 +70,7 @@ footer h2 {
 
 
 /* for middle screen sizes 768px and down */
-@media screen and {max-width: 768px {
+@media screen and（max-width: 768px){
     .game-area {
         width: 50%;
         height: 50%;
@@ -82,15 +82,23 @@ footer h2 {
 
     #container {
         width: 50%;
+        text-align: center;
     }
 
-   .player {
-      clear: both;
-   }
+    #player-image, #computer-image {
+        width: 50%;
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .player {
+        text-align: left;
+    }
 
-   .computer {
-      clear: both;
-   }
+    .computer {
+       text-align: left;
+    }
 
     footer {
         height: 50%;
