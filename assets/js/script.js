@@ -10,14 +10,15 @@
  const computerImage = document.getElementById("computer-image");
  const messages = document.getElementById("messages");
  const choices = ["Rock", "Paper", "Scissors"];
- 
+ let computerscore = 0;
+ let playerscore = 0;
  /**
   * Add event listener to all the buttons
   */
  
  for (let button of buttons) {
-     button.addEventListener("click", function(){
-         let playerChoice = this. getAttribute("data-choice");
+     button.addEventListener("click", function () {
+         let playerChoice = this.getAttribute("data-choice");
          runGame(playerChoice);
      })
  }
@@ -27,30 +28,40 @@
   * selected button
   */
  
- function runGame(playerChoice){
-     playerImage.src = `assets/images/${choices[playerChoice]}.jpg`;
+ function runGame(playerChoice) {
+     playerImage.src = `./assets/images/${choices[playerChoice]}.png`;
      playerImage.alt = choices[playerChoice];
  
-     let computerChoice = Math.floor(Math.random() *3);
+     let computerChoice = Math.floor(Math.random() * 3);
  
-     computerImage.src = `assets/images/${choices[computerChoice]}.jpg`;
+     computerImage.src = `./assets/images/${choices[computerChoice]}.png`;
  
-     let result= checkWinner(choices[computerChoice], choices[playerChoice]);
- 
-     updateScores(result);
+     let result = checkWinner(choices[computerChoice], choices[playerChoice]);
  }
-
+ 
  /**
-  * compare results
+  * check Winner function
   */
-function compareResults(checkWinner) {
-      if (computerChoice === playerChoice){
-          alert("It's a tie!");
-      } else if (playerChoice === choices[0] && computerChoice === choices[1]){
-          alert("You win!Computer lost.");
-      } else if (playerChoice === choices[1]) && computerChoice === choices[2]{
-          alert("You lost! Computer wins.");
-      } else if (playeChoice === choices[2] && computerChoice === choices[0]){
-            alert("You lost! compute lost.");
-      }
-}
+ function checkWinner(computer, player) {
+     console.log(computer)
+     console.log(player)
+     if (
+         (computer == 'Rock' && player == 'Paper') ||
+         (computer == 'Scissors' && player == 'Rock') ||
+         (computer == 'Paper' && player == 'Scissors')
+     ) {
+         document.querySelector('#result').innerHTML = "result:player win";
+         playerscore = playerscore + 1;
+     } else if (
+         (computer == 'Rock' && player == 'Scissors') ||
+         (computer == 'Paper' && player == 'Rock') ||
+         (computer == 'Scissors' && player == 'Paper')
+     ) {
+         document.querySelector('#result').innerHTML = "result:computer win";
+         computerscore = computerscore + 1;
+     } else {
+         document.querySelector('#result').innerHTML = "result:A draw";
+     }
+     document.querySelector('#computer-score').innerHTML = computerscore;
+     document.querySelector('#player-score').innerHTML = playerscore;
+ }

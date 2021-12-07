@@ -1,116 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Oswald:wght@300&family=PT+Sans&display=swap');
 
 Body {
-    font-family: Oswald, sans-serif;
-    font-weight: 300;
-    color: #000000;
-    background-color: #fcf2f0;
+  font-family: Oswald, sans-serif;
+  font-weight: 300;
+  color: #000000;
+  background-color: #fcf2f0;
 }
-
 /* header */
 header {
-    text-align: center;
+  text-align: center;
 }
-
-
 /* game area*/
 .game-area {
-    width: 100%;
-    height: 1200px;
+  width: 100%;
+  height: 1200px;
 }
-
 .game-area p {
-    text-align: center;
+  text-align: center;
 }
-
 #buttons-area {
-   text-align: center;
+  text-align: center;
 }
-
 #container {
-    width: 100%;
+  width: 100%;
+  overflow: hidden;
+  max-width: 1200px;
+  display: block;
+  margin: auto;
 }
-
-#player-image, #computer-image {
-    width: 90%;
-    height: auto;
-    margin-top: 0;
-    margin-bottom: 0;
+#container .player,
+#container .computer {
+  width: 50%;
+  float: left;
 }
-
-.player {
-    width: 30%;
-    float: left;
-    padding: 0 50px 0 250px;
+#container .player h3,
+#container .computer h3,
+#container .player img,
+#container .computer img {
+  margin: 30px;
 }
-
-.computer{
-    width: 30%;
-    float: left;
-    padding: 0 50px 0 50px;
+#player-image,
+#computer-image {
+  width: 90%;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-
+#restart {
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 24px;
+  display: block;
+  width: 120px;
+  margin: auto;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  text-decoration: none;
+}
 .scores {
-    text-align: left;
+  text-align: left;
+  width: 100%;
 }
-
 /* footer */
 footer {
-    clear: both;
-    height: 100px;
-    text-align: center;
-    padding-top: 200px;
-    padding-bottom: 0px;
+  clear: both;
+  height: 100px;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 0px;
 }
-
 footer h2 {
-    font-size: 20px;
+  font-size: 20px;
 }
-
-
 /* for middle screen sizes 768px and down */
-@media screen and (max-width: 768px){
-    header {
-        text-align: left;
-    }
-
-    .game-area {
-        width: 50%;
-        height: 50%;
-    }
-
-    .game-area p{
-        text-align: left;
-    }
-
-    #buttons-area {
-        text-align: left;
-    }
-
-    #container {
-        width: 90%;
-    }
-    
-    #player-image, #computer-image {
-        width: 100%;
-        height: auto;
-        padding: 0 50px 0 50px;
-    }
-    
-    .player {
-        width: 80%;
-        clear: both;
-    }
-    
-    .computer{
-        width: 80%;
-        clear: both;
-
-    footer {
-        height: 50%;
-    }
-
-    footer h2 {
-        font-size: 10px;
-    } 
+@media screen and (max-width: 768px) {
+  #container {
+    width: 100%;
+    overflow: hidden;
+  }
+  #container .player,
+  #container .computer {
+    width: 100%;
+    float: left;
+  }
+  #container .player h3,
+  #container .computer h3,
+  #container .player img,
+  #container .computer img {
+    margin: auto;
+    text-align: center;
+    padding: 10px 0;
+  }
+  header {
+    text-align: left;
+  }
+  .game-area p {
+    text-align: left;
+  }
+  #buttons-area {
+    text-align: left;
+  }
+  #container {
+    width: 90%;
+  }
+  #player-image,
+  #computer-image {
+    height: 90px;
+    width: auto;
+    display: block;
+    margin: auto;
+  }
+  .player {
+    width: 80%;
+    clear: both;
+  }
+  .computer {
+    width: 80%;
+    clear: both;
+  }
+  .computer footer {
+    height: 50%;
+  }
+  .computer footer h2 {
+    font-size: 10px;
+  }
+}
+#result {
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
 }

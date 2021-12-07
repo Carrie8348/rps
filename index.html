@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,40 +8,44 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-<header>
-    <h2>Rock, Paper, Scissors</h2>
-</header>
+    <header>
+        <h2>Rock, Paper, Scissors</h2>
+    </header>
 
-<section class="game-area">
-    <div>
-        <p>Let's Play!</p>
-        <div id="buttons-area">
-        <button arial-label="Rock" data-choice="0" class="control">Rock</button>
-        <button arial-label="Paper" data-choice="1" class="control">Paper</button>
-        <button arial-label="Scissor" data-choice="2" class="control">Scissor</button>
-     </div>
-    </div>
-    <div id="messages"></div>
-    <div id="container">
-    <div class="player">
-        <h3 class="scores">Your score: <span id="player-score">0</span></h3>
-        <img id="player-image" src="assets/images/openning.jpg" alt="Rock Paper Scissors">
-    </div>
-    <div class="computer">
-        <h3 class="scores">Computer score: <span id="computer-score">0</span></h3>
-        <img id="computer-image" src="assets/images/openning.jpg" alt="Rock Paper Scissors">
-    </div>
-</div>
+    <section class="game-area">
+        <div>
+            <p>Let's Play!</p>
+            <div id="buttons-area">
+                <button arial-label="Rock" data-choice="0" class="control">Rock</button>
+                <button arial-label="Paper" data-choice="1" class="control">Paper</button>
+                <button arial-label="Scissor" data-choice="2" class="control">Scissor</button>
+            </div>
+        </div>
 
-<footer>
-    <h2>Come back to have more fun!</h2>
-</footer>
-</section>
+        <div id="container">
+            <div class="player">
+                <h3 class="scores">Your score: <span id="player-score">0</span></h3>
+                <img id="player-image" src="assets/images/openning.png" alt="Rock Paper Scissors">
+            </div>
+            <div class="computer">
+                <h3 class="scores">Computer score: <span id="computer-score">0</span></h3>
+                <img id="computer-image" src="assets/images/openning.png" alt="Rock Paper Scissors">
+            </div>
+        </div>
+        <div id="messages"></div>
+        <p id="result"></p>
+        <a id="restart" href="./index.html">restart</a>
+        <footer>
+            <h2>Come back to have more fun!</h2>
+        </footer>
+    </section>
 
 
 
 
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
