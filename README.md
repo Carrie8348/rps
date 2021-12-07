@@ -15,11 +15,13 @@ I was inspired by Code Institute's unit "Scope" which was presented by Matt Rudg
 - Header
 	- The title of the game;
 	- Under there lists a message to the player "Let's play"
-    ![Main]
+    ![Main](assets/wireframe/game-area.png )
 - The Game options
 	- User can choose from the 3 buttons on the page "Rock", "Paper" or "Scissor" to start the game.
+     ![Main](assets/wireframe/three-main-button.png )
 	- When user clicks on one button, and computer will also randomly choose one, then the results shows on the page, the scores will be updated when there's a win and lose, if it's a draw, then no scores will be updated.
     - There's a RESTART button under the picture, which can clean up the already recorded scores.
+     ![Main](assets/wireframe/restart-button.png )
 - The Footer
 	- Only a sentence to encourage the user to come back and play sometime.
 
