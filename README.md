@@ -9,6 +9,7 @@ I was inspired by Code Institute's unit "Scope" which was presented by Matt Rudg
 
 
 **Features**
+![Main](assets/wireframe/preview.001.png)
 
 **Existing features**
 
@@ -40,8 +41,10 @@ I was inspired by Code Institute's unit "Scope" which was presented by Matt Rudg
 **Validator Testing:**
 - HTML
 	- No errors were returned when passing through the official W3C validator;
+     ![Main](assets/validator-pic/html-validator.png)
 - CSS
-	- No errors were found when passing through the official Jigsaw validator
+	- No errors were found when passing through the official Jigsaw validator;
+    ![Main](assets/validator-pic/css-validator.png)
 
 **Deployment**
 - The site was deployed to GitHub pages, the steps to deploy as follows:
