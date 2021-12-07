@@ -9,7 +9,7 @@
  const playerImage = document.getElementById("player-image");
  const computerImage = document.getElementById("computer-image");
  const messages = document.getElementById("messages");
- const choices = ["Rock", "Paper", "Scissors"];
+ const choices = ["rock", "paper", "scissors"];
  let computerscore = 0;
  let playerscore = 0;
  /**
@@ -29,12 +29,12 @@
   */
  
  function runGame(playerChoice) {
-     playerImage.src = `./assets/images/${choices[playerChoice]}.png`;
+     playerImage.src = `assets/images/${choices[playerChoice]}.png`;
      playerImage.alt = choices[playerChoice];
  
      let computerChoice = Math.floor(Math.random() * 3);
  
-     computerImage.src = `./assets/images/${choices[computerChoice]}.png`;
+     computerImage.src = `assets/images/${choices[computerChoice]}.png`;
  
      let result = checkWinner(choices[computerChoice], choices[playerChoice]);
  }
@@ -46,16 +46,16 @@
      console.log(computer)
      console.log(player)
      if (
-         (computer == 'Rock' && player == 'Paper') ||
-         (computer == 'Scissors' && player == 'Rock') ||
-         (computer == 'Paper' && player == 'Scissors')
+         (computer == 'rock' && player == 'paper') ||
+         (computer == 'scissors' && player == 'rock') ||
+         (computer == 'paper' && player == 'scissors')
      ) {
          document.querySelector('#result').innerHTML = "result:player win";
          playerscore = playerscore + 1;
      } else if (
-         (computer == 'Rock' && player == 'Scissors') ||
-         (computer == 'Paper' && player == 'Rock') ||
-         (computer == 'Scissors' && player == 'Paper')
+         (computer == 'rock' && player == 'scissors') ||
+         (computer == 'paper' && player == 'rock') ||
+         (computer == 'scissors' && player == 'paper')
      ) {
          document.querySelector('#result').innerHTML = "result:computer win";
          computerscore = computerscore + 1;
