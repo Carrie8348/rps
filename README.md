@@ -31,6 +31,8 @@ I was inspired by Code Institute's unit "Scope" which was presented by Matt Rudg
 - I tested playing this game in Chrome;
 - I confirmed that game results are correct all the time;
 - I confirmed page is responsive;
+- The results on Lighthouse:
+![Main](assets/validator-pic/lighthouse.png)
 
 
 **Bugs**
